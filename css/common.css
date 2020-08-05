@@ -1,0 +1,50 @@
+:root{
+    --sunset1:#ade0f9;
+      --sunset2:#bbe6fd;
+      --sunset3:#cceeff;
+      --sunset4:#dff4fe;
+      --sunset5:#ecf7f7;
+      --sunset6:#f1f9eb;
+      --sunset7:#f1f6dc;
+      --sunset8:#f0f1ce;
+      --sunset9:#f0ebbf;
+      --sunset10:#f3e7ad;
+      --sunset11:#f9e495;
+      --sunset12:#ffe07a;
+}
+.my-color-1{
+  background-color: var(--sunset1) !important;
+}
+.my-color-2{
+  background-color: var(--sunset2) !important;
+}
+.my-color-3{
+  background-color: var(--sunset3) !important;
+}
+.my-color-4{
+  background-color: var(--sunset4) !important;
+}
+.my-color-5{
+  background-color: var(--sunset5) !important;
+}
+.my-color-6{
+  background-color: var(--sunset6) !important;
+}
+.my-color-7{
+  background-color: var(--sunset7) !important;
+}
+.my-color-8{
+  background-color: var(--sunset8) !important;
+}
+.my-color-9{
+  background-color: var(--sunset9) !important;
+}
+.my-color-10{
+  background-color: var(--sunset10) !important;
+}
+.my-color-11{
+  background-color: var(--sunset11) !important;
+}
+.my-color-12{
+  background-color: var(--sunset12) !important;
+}
