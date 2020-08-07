@@ -1,3 +1,3 @@
 $(document).ready(function(){
-    　　　　$("#footer").load("/_include/footer.html");
+    　　　　$("#footer").load("https://raw.githubusercontent.com/hakase-kenken/hakase-kenken.github.io/master/_include/footer.html");
 });
