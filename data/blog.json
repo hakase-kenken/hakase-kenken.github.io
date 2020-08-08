@@ -1,9 +1,8 @@
 [
     {
         "title":"テスト",
-        "blog-url":"2020-8.1.0000.html",
+        "blog-url":"blog-base.html",
         "category":"インフォメーション",
-        "youyaku":"テストようです。内容見てください。",
-        "img":"https://raw.githubusercontent.com/hakase-kenken/photo-archive/master/sakura.jpg"
+        "youyaku":"テストようです。内容見てください。"
     }
 ]
