@@ -2,47 +2,109 @@
 <html lang="ja">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>小学生手作りサイトーホーム</title>
-    <meta name="description" content="小学生が０から作った、心温まる（？）サイト　※全て小学生作成です。">
-    <!--inport-->
-    <!--css-->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/common.css">
-    <!--js-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <script>
-        jQuery.ajaxPrefilter(function (s) {
-            if (s.crossDomain) { s.contents.script = false; }
-        });
-    </script>
-    <!--include javascript files-->
-    <script src="js/header-output.js"></script>
-    <script src="js/footer-output.js"></script>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-174002930-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>小学生手作りサイトーホーム</title>
+  <meta name="description" content="小学生が０から作った、心温まる（？）サイト　※全て小学生作成です。">
+  <!--inport-->
+  <!--css-->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/common.css">
+  <!--js-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script>
+    jQuery.ajaxPrefilter(function (s) {
+      if (s.crossDomain) { s.contents.script = false; }
+    });
+  </script>
+  <!--Google fonts include-->
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap" rel="stylesheet">
+  <style>
+    .f-M-PLUS1P-ja {
+      font-family: 'M PLUS 1p';
+    }
 
-  gtag('config', 'UA-174002930-1');
-</script>
-<body>
-    <!--ヘッダーです。　自動的に読み込まれます。　idを変更しないでください-->
-    <header id="header">
-    </header>
-    <!--ここからを編集してください。-->
-    <main>
-    </main>
-    <!--ここまでを編集してください。-->
-    <!--フッダーです。　自動的に読み込まれます。 idを変更しないでください-->
-    <footer id="footer">
-    </footer>
-    <!--優先不要js-->
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" crossorigin="anonymous"></script>
-    <script src="/js/bootstrap.min.js"></script>
+    .f-QUICK-SAND-en {
+      font-family: 'Quicksand', sans-serif;
+    }
+
+    .f-NOTO-SERIF-ja{
+      font-family: 'Noto Serif JP', serif;
+    }
+  </style>
+  <!--include javascript files-->
+  <script src="js/header-output.js"></script>
+  <script src="js/footer-output.js"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-174002930-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-174002930-1');
+  </script>
+
+<body class="container-fluid">
+  <!--ヘッダーです。　自動的に読み込まれます。　idを変更しないでください-->
+  <header id="header" class="col-12">
+  </header>
+  <!--ここからを編集してください。-->
+  <main>
+    <br />
+    <div class="jumbotron my-color-3" style="height: 200%;">
+
+      <p>
+        買ってもらった、最初のパソコン、黒い画面に白い文字、<br />キラキラ光る、緑色の基盤。
+        いろいろ試してやっと出た、
+      <h6 class="display-4 f-QUICK-SAND">Hello,world!</h6>
+      ぼくがパソコンの世界に目覚めたのは、そこからさ☆
+      </p>
+      <h3 class="text-right f-QUICK-SAND">by <span class="f-M-PLUS1P">けんけん<del
+            style="font-size: small;">（カッコつけてみた）</del></span></h3>
+
+    </div>
+    <h2>
+    </h2>
+    <div class="col-12">
+      <div id="slide" class="carousel slide col-8" data-ride="carousel" style="margin: auto;">
+        <ol class="carousel-indicators">
+          <!--Emmet展開魔法の言葉(最後の一文字自分で追加)　
+            li[data-target="#slide" data-slide-to="#"]
+          -->
+          <li data-target="#slide" data-slide-to="0" class="active"></li>
+          <li data-target="#slide" data-slide-to="1"></li>
+          <li data-target="#slide" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <!--Emmet展開魔法の言葉(srcとaltは自分で追加)
+          div.carousel-item>img.d-block.w-100
+          -->
+          <div class="carousel-item active">
+            <img
+              src="https://lgjg8w.bn.files.1drv.com/y4m_C9QlnooXd9QvcptYyBbt-8o_Q-C-1NwzpJp0VX6V92R6RAUzW1VaFl-wSkc9UUNkE5xW5bALGSwHHpWkqlAZxdler2ZmDBIm5LULVy4L_pRAbePGaZgwtptTS_d3mxMuOoL9hrZvsLqJVhFVy4BfLkkEdf0CBCm4JJh47g-tZ-dJQUB-sMypRZER9xmOyR-AaGAfEeu5cq9rjzGG7hv7w?width=660&height=495&cropmode=none"
+              class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://lggrfw.bn.files.1drv.com/y4md4mroURAPwzxFxVthX0aO8vV3unXeN03o1bFR9kexUAdAUQAs9tfV8C92hvi8Rn-5ij6HS1rZdCz0aR54rMBjoZuLLOsFNbXvAmV6GjkA3OfFU8GyukjGWNzx_TTXYKDJEcwhmdr9X3NpGgJsO73cm3Cg84h3n87vzYaIVotcjPaUa1iOF5J0BubyAx0-NJKz-iJvKhqNwmoau3Toe_KNw?width=660&height=495&cropmode=none"
+              class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://lgj83a.bn.files.1drv.com/y4mujEaTZ3IyjGKRZrc68tfl6aKj18Ls0_3Og7zDacz03lTkORvUza2oGeufE8tJaM5XKwBBN4CMKde-8ivPy9RSlr81aYEwLoFnV89jU7_W50wCrTz6QoICL5lzKCiCcFEdoLpwBMgd0_xb-FeGwokukVKXy2otuMcMadRKgPN64CmhslcB2a6raAC2GpWsRnz7trMoE_3hQ85dlnyN4iZNQ?width=660&height=495&cropmode=none" alt="" 
+              class="d-block w-100"></div>
+        </div>
+  </main>
+  <!--ここまでを編集してください。-->
+  <!--フッダーです。　自動的に読み込まれます。 idを変更しないでください-->
+  <footer id="footer">
+  </footer>
+  <!--優先不要js-->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+  <script src="/js/bootstrap.min.js"></script>
 </body>
 
 </html>
