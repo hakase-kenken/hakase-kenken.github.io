@@ -10,18 +10,13 @@
   <!--css-->
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/common.css">
-  <!--js-->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-  <script>
-    jQuery.ajaxPrefilter(function (s) {
-      if (s.crossDomain) { s.contents.script = false; }
-    });
-  </script>
   <!--Google fonts include-->
   <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@300&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap" rel="stylesheet">
   <style>
+  /*クラス命名規則　f-{フォント名(全部大文字)}-{ja・en・etc}
+  例　　M PLUS 1pの場合　.f-M-PLUS1P-ja*/
     .f-M-PLUS1P-ja {
       font-family: 'M PLUS 1p';
     }
@@ -34,6 +29,14 @@
       font-family: 'Noto Serif JP', serif;
     }
   </style>
+  <!--js-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script>
+    jQuery.ajaxPrefilter(function (s) {
+      if (s.crossDomain) { s.contents.script = false; }
+    });
+  </script>
+  
   <!--include javascript files-->
   <script src="js/header-output.js"></script>
   <script src="js/footer-output.js"></script>
@@ -82,7 +85,7 @@
       <div class="carousel-inner" id="inners-target">
         <script>
           $(function () {
-            $.getJSON("data/slideshow.json", function (slideshowinner) {
+            $.getJSON("data/book.json", function (slideshowinner) {
               for (var i in slideshowinner) {
                 var inner = '<div class="carousel-item ' + slideshowinner[i].other_class + '">' + '<img src="' + slideshowinner[i].imgurl + '" class="d-block w-100" alt="..."></div>'
                 $("div#inners-target").append(inner);
