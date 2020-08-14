@@ -4,17 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>小学生手作りサイトー読んだ本を見る</title>
+    <title>小学生手作りサイトー{サイトタイトルを入力}</title>
     <meta name="description" content="小学生が０から作った、心温まる（？）サイト　※全て小学生作成です。">
     <!--inport-->
     <!--css-->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/common.css">
     <!--Google fonts include-->
-
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
     <style>
       /*クラス命名規則　f-{フォント名(全部大文字)}-{ja・en・etc}
       例　　M PLUS 1pの場合　.f-M-PLUS1P-ja*/
+
+    .f-M-PLUS1P-ja {
+      font-family: 'M PLUS 1p';
+    }
+    .f-QUICK-SAND-en {
+        font-family: 'Quick sand',sans-serif;
+    }
     </style>
     <!--js-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
@@ -33,29 +41,11 @@
     </header>
     <!--ここからを編集してください。-->
     <main>
-        <h1 class="col-12">読んだ本一覧</h1>
-        <div class="container text-center mt-3 mb-3">
-            <div class="row" id="blog-data-output">
-                <script type="text/javascript">
-                    $(function(){
-                      $.getJSON("data/book.json", function(book){
-                        for(var i in book){
-                          var card = '<div class="card col-12 col-md-4 col-lg-3">'
-                                + ' <img class="card-img-top" src="'+book[i].imgurl+'" alt="">'
-                                + ' <div class="card-body">'
-                                + '     <h5 class="card-title">'+book[i].book_name+'</h5>'
-                                + '     <p class="card-text">'+book[i].book_impression+'</p>'
-                                + '     <a href="https://hakase-kenken.github.io/book-archive/'+book[i].id_for_identification+'.html" class="btn my-color-3" target="book-iframe">くわしくみちゃう？</a>'
-                                + ' </div>'
-                                +'</div>'
-                          $("div#blog-data-output").append(card);
-                        }
-                      });
-                    });
-                </script>
-            </div>
-            <iframe name="book-iframe" class="col-12" frameborder="0"></iframe>
-        </div>
+        <h1 class="text-center f-M-PLUS1P-ja"><span class="f-M">404</span>エラー</h1>
+        <h2 class="text-center f-M-PLUS1P-ja">アクセスしようとしているページは、削除、URLの変更などがおこなわれています。</h2>
+        <h3 class="text-center f-M-PLUS1P-ja">申し訳ございませんが、<a href="index.html">ホームに戻る</a>か、<br/>
+    ブラウザの戻るボタンを押してください</h3>
+  
     </main>
     <!--ここまでを編集してください。-->
     <!--フッダーです。　自動的に読み込まれます。 idを変更しないでください-->
