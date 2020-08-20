@@ -48,3 +48,6 @@
 .my-color-12{
   background-color: var(--sunset12) !important;
 }
+.my-paddingclear{
+  padding: 0;
+}
