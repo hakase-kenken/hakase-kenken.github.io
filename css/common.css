@@ -54,3 +54,6 @@
 .my-black-link{
   color: black;
 }
+.my-w-100{
+  width: 100% !important;
+}
