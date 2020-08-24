@@ -1,4 +1,5 @@
 :root{
+
     --sunset1:#ade0f9;
       --sunset2:#bbe6fd;
       --sunset3:#cceeff;
@@ -11,6 +12,11 @@
       --sunset10:#f3e7ad;
       --sunset11:#f9e495;
       --sunset12:#ffe07a;
+      /*夏カラー*/
+      --sunsetN1:#AAEBC7;
+      --sunsetN2:#A3C5EA;
+      /*秋カラー*/
+      --sunsetA1:#BDE384;
 }
 .my-color-1{
   background-color: var(--sunset1) !important;
@@ -47,6 +53,9 @@
 }
 .my-color-12{
   background-color: var(--sunset12) !important;
+}
+.my-color-N1{
+  background-color: var(--sunsetN1) !important;
 }
 .my-paddingclear{
   padding: 0;
