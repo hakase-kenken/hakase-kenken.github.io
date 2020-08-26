@@ -40,6 +40,8 @@
   <!--include javascript files-->
   <script src="js/header-output.js"></script>
   <script src="js/footer-output.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+  <script src="/js/bootstrap.min.js"></script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-174002930-1"></script>
   <script>
@@ -123,6 +125,12 @@
         </thead>
         <tbody>
           <tr>
+            <th>
+              <time>８月２６日</time>
+            </th>
+            <td>お知らせメッセージを表示するようにしました。</td>
+          </tr>
+          <tr>
             <th scope="row"><time data-time="2020-08-14">８月２４日</time></th>
             <td>お知らせページを増設しました。</td>
           </tr>
@@ -143,16 +151,47 @@
         </tbody>
       </table>
     </div>
-  </nav>
+    </nav>
+    <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+      <div class="modal-dialog  modal-xl" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalLabel">ようこそ</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <img src="https://cdn.jsdelivr.net/gh/froala/design-blocks@master/dist/imgs//draws/smile.svg"
+                  class="img-fluid col-8">
+                <div class="col-4">
+                  <h2>ようこそ僕のサイトへ！！</h2><br />
+                  僕は、小４のケンケン、<br />
+                  夏の自由研究でこのサイトを、作ってみました。<br />
+                  少しでも楽しんでもらえると嬉しいです！！<br />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">閉じる</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      //ようこそメッセージ表示
+      $('#modal').modal('show')
+    </script>
     <!--infomaition-->
   </main>
   <!--ここまでを編集してください。-->
   <!--フッダーです。　自動的に読み込まれます。 idを変更しないでください-->
   <footer id="footer">
   </footer>
-  <!--優先不要js-->
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" crossorigin="anonymous"></script>
-  <script src="/js/bootstrap.min.js"></script>
+  </div>
 </body>
 
 </html>
