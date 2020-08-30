@@ -66,3 +66,23 @@
 .my-w-100{
   width: 100% !important;
 }
+#my-header {
+  margin:0; padding:0;
+  width: 100%;
+  padding: 15px 0;
+  margin: 0 auto;
+  text-align: center;
+}
+#my-header-title{
+  font-size: 32px;
+}
+#my-navlist {
+  text-align: center;
+  padding: 10px 0;
+  margin: 0 auto;
+}
+.nav-list-item {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+}
