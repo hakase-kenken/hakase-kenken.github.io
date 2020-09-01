@@ -62,6 +62,7 @@
 }
 .my-black-link{
   color: black;
+  text-decoration: none;
 }
 .my-w-100{
   width: 100% !important;
