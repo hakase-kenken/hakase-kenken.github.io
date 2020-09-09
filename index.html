@@ -17,6 +17,9 @@
     })(window, document, 'script', 'dataLayer', 'GTM-WNNMFJT');
   </script>
   <script src="js/bootstrap@4.5.0-popper@1.16.0-jquery@2.2.4.js" crossorigin="anonymous"></script>
+  <script>jQuery.ajaxPrefilter(function (s) {
+    if (s.crossDomain) { s.contents.script = false; }
+});</script>
 </head>
 
 <body class="container-fluid f-M-PLUS1P-ja f-QUICK-SAND-en my-paddingclear">
